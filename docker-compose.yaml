@@ -1,7 +1,6 @@
 services:
   chaser_website_back:
-    image: chaser_website_back:latest
-    container_name: "chaser_website"
+    container_name: chaser_website
     build:
       context: .
       dockerfile: Dockerfile
@@ -24,7 +23,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     ports:
-      - "5435:5435"
+      - "5435:5432"
     environment:
       POSTGRES_USER: "${POSTGRES_USER}"
       POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"

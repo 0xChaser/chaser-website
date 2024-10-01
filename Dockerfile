@@ -24,14 +24,9 @@ FROM base AS development
 WORKDIR /app
 
 # Install the project dependencies
-RUN pip install --no-cache-dir -e .[dev]
+RUN pip install --no-cache-dir -e .
 
-COPY docker-entrypoint.sh /bin/docker-entrypoint.sh
-RUN chmod +x /bin/docker-entrypoint.sh
-
-ENTRYPOINT ["/bin/docker-entrypoint.sh"]
-
-CMD ["care-tracker", "dev"]
+CMD ["fastapi", "dev"]
 
 EXPOSE 8090
 
@@ -52,4 +47,4 @@ RUN pip install --no-cache-dir -e .
 EXPOSE 8090
 
 SHELL ["/bin/bash", "-c"]
-ENTRYPOINT care-tracker dev
+CMD ["fastapi", "run"]
