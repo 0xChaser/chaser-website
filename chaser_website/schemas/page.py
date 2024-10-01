@@ -2,7 +2,7 @@ from typing import Generic, TypeVar
 
 from pydantic import BaseModel
 
-from project.schemas.project import ProjectOut
+from chaser_website.schemas.project import ProjectOut
 
 T = TypeVar('T')
 

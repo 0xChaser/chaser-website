@@ -3,10 +3,10 @@ from uuid import UUID
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from project.db import get_session
-from project.schemas.project import (ProjectIn, ProjectOut,ProjectPatch)
-from project.schemas.page import Page
-from project.services.project import ProjectService
+from chaser_website.db import get_session
+from chaser_website.schemas.project import (ProjectIn, ProjectOut,ProjectPatch)
+from chaser_website.schemas.page import Page
+from chaser_website.services.project import ProjectService
 
 router = APIRouter(prefix="/project", tags=["Project"])
 

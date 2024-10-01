@@ -3,10 +3,10 @@ from uuid import UUID
 from loguru import logger
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from project.daos import project
-from project.exceptions.project import ProjectNotFound
-from project.schemas.project import (ProjectIn, ProjectOut, ProjectPatch)
-from project.schemas.page import Page
+from chaser_website.daos import project
+from chaser_website.exceptions.project import ProjectNotFound
+from chaser_website.schemas.project import (ProjectIn, ProjectOut, ProjectPatch)
+from chaser_website.schemas.page import Page
 
 
 class ProjectService:

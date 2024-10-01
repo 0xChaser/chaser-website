@@ -2,7 +2,7 @@ from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict, HttpUrl
 from typing import List
-from project.utils import optional
+from chaser_website.utils import optional
 
 
 

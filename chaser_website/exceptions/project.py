@@ -1,4 +1,4 @@
-from project.exceptions.base import NotFound
+from chaser_website.exceptions.base import NotFound
 
 
 class ProjectNotFound(NotFound):

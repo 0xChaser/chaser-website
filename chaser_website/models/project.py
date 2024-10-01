@@ -3,7 +3,7 @@ import uuid
 from sqlachemy import UUID ,String
 from sqlalchemy.orm import Mapped, mapped_column
 from typing import List
-from project.models.base import Base
+from chaser_website.models.base import Base
 
 class Project(Base):
     __tablename__ = "projects"
