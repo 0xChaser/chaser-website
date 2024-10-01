@@ -1,6 +1,9 @@
 **/*.pyc
 **/__pycache__/
-.venv/
 .env/
-venv/
-env/
+.env
+chaser_website.egg-info/
+lib/
+bin/
+include/
+pyvenv.cfg

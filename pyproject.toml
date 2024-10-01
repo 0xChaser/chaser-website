@@ -1,18 +1,18 @@
 [project]
-name = "chaser-website-API"
-version = "0.1.0"
+name = "chaser-website"
+description = "API for chaser website"
+authors = [{name = "Florian ISAK"}]
+readme = "README.md"
+requires-python = ">=3.10"
 dependencies = [
-  "fastapi>=0.112.0",
-  "pydantic-settings>=2.4.0",
+    "alembic>=1.11.1",
+    "asyncpg>=0.28.0",
+    "fastapi[all]>=0.100.0",
+    "pydantic>=2.0.3",
+    "sqlalchemy>=2.0.19",
+    "faker>=29.0.0"
 ]
-requires-python = ">=3.11"
+dynamic = ["version"]
 
-description = "Chaser-Website-API"
-
-[project.optional-dependencies]
-dev = [
-    "black",
-    "flake8",
-    "mypy",
-    "pytest"
-]
+[tool.setuptools]
+packages = ["project"]
