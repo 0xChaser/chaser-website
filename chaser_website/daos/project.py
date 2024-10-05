@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from sqlalchemy import delete, func, select
+from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
@@ -34,3 +34,6 @@ class ProjectDao(BaseDao):
         await self.session.execute(statement=statement)
         await self.session.commit()
         return _project
+    
+# Test de commit 
+    
